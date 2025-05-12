@@ -1,4 +1,3 @@
-
 # Bot Clicker Google Search Automation
 
 Một ứng dụng sử dụng PyQt5 kết hợp với xử lý ảnh và điều khiển chuột/bàn phím để tự động hóa thao tác tìm kiếm trên Google.
@@ -38,6 +37,14 @@ conda env create -f environment.yml
 conda activate bot-clicker
 ```
 
+### 3. Cài thêm thư viện `docTR` (Document Text Recognition):
+
+```bash
+pip install "doctr[torch]"
+```
+
+> **Lưu ý**: Bạn cần Python ≥ 3.7 và có thể sẽ cần cài thêm PyTorch nếu chưa có. Nếu bạn dùng GPU, hãy cài PyTorch phù hợp tại: https://pytorch.org/get-started/locally/
+
 ---
 
 ## 🚀 Chạy chương trình
@@ -57,7 +64,7 @@ project/
 ├── src/
 │   ├── program.py             # Chứa lớp Programn với logic tự động
 │   ├── template_matcher.py    # Phát hiện template bằng OpenCV
-│   ├── search_key_ocr.py      # Nhận dạng từ khóa bằng OCR
+│   ├── search_key_ocr.py      # Nhận dạng từ khóa bằng OCR (tùy chọn docTR)
 │   ├── keyboard_controller.py # Gõ từ khóa, nhấn phím
 │   ├── mouse_controller.py    # Điều khiển chuột
 │
@@ -89,8 +96,8 @@ project/
 
 Nếu bạn cần hỗ trợ hoặc muốn đóng góp:
 
-- Email: your_email@example.com
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
+- Email: quanglvhust@gmail.com
+- GitHub: [github.com/quanglv1996](https://github.com/quanglv1996)
 
 ---
 
